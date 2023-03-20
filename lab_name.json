@@ -1,0 +1,59 @@
+{
+	"08002C" : {
+		"WBC" : {
+			"Include" : [	"WBC", "白血球計數", "W.B.C.",
+							"W.B.C", "白 血 球計數", "W.B.C count",
+							"(W.B.C)", "Differential Count(D.C)", "Differential Count(D.C.)",
+							"08002C"],
+			"Exclude" : ["CBC-I\\(WBC,RBC", "CBC\\(WBC,RBC,HGB,HCT,MCV,PLAT\\)"]
+		}
+	},
+	
+	"08003C" : {
+		"Hb" : {
+			"Include" : [	"^Hb", "Hemoglobin", "HGB", "血色素檢查", "血色素", "^HB",
+							"08003C", "08003c", "Hgb", "HgB", "血紅素", "血   色   素"],
+			"Exclude" : [	"血色素檢查(PL)", "MCH", "MCV平均血紅素容積"]
+		}
+	},
+	
+	"08004C" : {
+		"HT" : {
+			"Include" : [	"HT", "HCT", "Hct", "Hematocrit", "Ht",
+							"HcT", "Hematocrit", "血球容積比",
+							"血球比容值測定", "HEMATOCRIT", "HEMATOCRITE",
+							"Hematoctite", "血球容積", "血球比容值"],
+			"Exclude" : [	"MCV"]
+		},
+		
+		"MCH" : {
+			"Include" : [	"MCH", "平均紅血球容積", "平均紅血球值"],
+			"Exclude" : [	"MCHC", "MCV"]
+		},
+		
+		"MCV" : {
+			"Include" : [	"MCV", "M.C.V."],
+			"Exclude" : []
+		},
+		
+		"MCHC" : {
+			"Include" : [	"MCHC"],
+			"Exclude" : []
+		}
+	},
+	
+	"08006C" : {
+		"Platelet_Count" : {
+			"Include" : [	"Platelet", "PLATELET", "血小板計數",
+							"Plt", "PLT", "血小板", "血 小 板計數",
+							"platelet", "PLAT", "Platel"],
+			"Exclude" : []
+		},
+		
+		"MPV" : {
+			"Include" : [	"MPV"],
+			"Exclude" : []
+		}
+		
+	}
+}

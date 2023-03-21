@@ -23,15 +23,15 @@ judge_func <- function(df, rule_v, col){
 
 
 lab_unit_classifier <- function(order_code,
-                                data_folder='C:/Users/wang/Desktop/lab_clean/'){
+                                data_folder='C:/Users/admin/Desktop/lab_clean_process/'){
   
   cat(order_code, '\n')
   # read rule data
   rule_data <- fromJSON(file=paste0(data_folder, "lab_unit.json"))
-  raw_df <- data.table(read_xlsx('C:/Users/wang/Desktop/lab_clean/lab_name_count.xlsx',
+  raw_df <- data.table(read_xlsx(paste0(data_folder,'lab_name_count.xlsx'),
                                  sheet = order_code))
   
-  clean_name <- data.table(read_xlsx(paste0('C:/Users/wang/Desktop/lab_clean/clean/name/', order_code, '.xlsx')))
+  clean_name <- data.table(read_xlsx(paste0(data_folder, 'clean/name/', order_code, '.xlsx')))
   raw_df <- raw_df[ASSAY_ITEM_NAME %in% clean_name[!is.na(ASSAY_NAME), ASSAY_ITEM_NAME]]
   
   res_v <- NULL

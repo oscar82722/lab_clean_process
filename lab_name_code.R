@@ -22,12 +22,12 @@ judge_func <- function(df, rule_v, col){
 }
 
 lab_name_classifier <- function(order_code,
-                                data_folder= 'C:/Users/wang/Desktop/lab_clean/'){
+                                data_folder= 'C:/Users/admin/Desktop/lab_clean_process/'){
 
   cat(order_code, '\n')
   # read rule data
   rule_data <- fromJSON(file=paste0(data_folder, "lab_name.json"))
-  raw_df <- data.table(read_xlsx('C:/Users/wang/Desktop/lab_clean/lab_name_count.xlsx',
+  raw_df <- data.table(read_xlsx(paste0(data_folder,'lab_name_count.xlsx'),
                                  sheet = order_code))
   
   res_v <- NULL
@@ -77,16 +77,22 @@ lab_name_classifier(order_code='08002C')
 lab_name_classifier(order_code='08003C')
 lab_name_classifier(order_code='08004C')
 lab_name_classifier(order_code='08006C')
-
-
-
-
-
-
-
-
-
-
+lab_name_classifier(order_code='08022B')
+lab_name_classifier(order_code='08024B')
+lab_name_classifier(order_code='08025B')
+lab_name_classifier(order_code='08026C')
+lab_name_classifier(order_code='08036B')
+lab_name_classifier(order_code='08036C')
+lab_name_classifier(order_code='08037B')
+lab_name_classifier(order_code='08038B')
+lab_name_classifier(order_code='08079B')
+lab_name_classifier(order_code='10511C')
+lab_name_classifier(order_code='12193B')
+lab_name_classifier(order_code='12193C')
+lab_name_classifier(order_code='12013C')
+lab_name_classifier(order_code='12014C')
+lab_name_classifier(order_code='12015C')
+lab_name_classifier(order_code='08011C')
 
 
 

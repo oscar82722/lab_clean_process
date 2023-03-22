@@ -62,32 +62,47 @@
 			"Include" : [	"WBC", "白血球計數", "W.B.C.",
 							"W.B.C", "白 血 球計數", "W.B.C count",
 							"(W.B.C)", "Differential Count(D.C)", "Differential Count(D.C.)",
-							"08002C"],
+							"08002C", "白血球"],
 			"Exclude" : [	"CBC-I\\(WBC,RBC", "CBC\\(WBC,RBC,HGB,HCT,MCV,PLAT\\)",
-							"WBC,RBC,HGB,HCT,MCV", "RBC", "HGB"]
+							"WBC,RBC,HGB,HCT,MCV", "RBC", "HGB", "RB", "嗜",
+							"帶狀白血球"]
 		},
 		
 		"RBC" : {
 			"Include" : [	"RBC", "R.B.C", "RBC", "R.B.C.", "Rbc", "紅血球數", "紅 血 球計數",
 							"紅血球計數"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "WBC", "MCH", "MCHC", "MCV", "RDW"]
+			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "WBC", "MCH", "MCHC", "MCV", "RDW",
+						"變異係數"]
 		},
 		
 		"RDW" : {
-			"Include" : [	"RDW", "RDW-SD", "紅血球分布寬度", "紅血球體積分布寬度",
-							"紅血球分佈寬度"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC"]
+			"Include" : [	"RDW", "紅血球分布寬度", "紅血球體積分布寬度",
+							"紅血球分佈寬度", "紅血球分佈寬"],
+			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "CV", "SD", "S",
+							"變異數", "標準差", "變異係數"]
+		},
+		
+		"RDW CV" : {
+			"Include" : [	"變異數", "CV", "變異係數"],
+			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "SD", "S", "標準差",
+							"MCV"]
+		},
+		
+		"RDW SD" : {
+			"Include" : [	"標準差", "SD", "RDW-S"],
+			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "CV", "變異數", "變異係數"]
 		},
 		
 		"MPV" : {
-			"Include" : [	"MPV"],
+			"Include" : [	"MPV", "平均血小板容積"],
 			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "Platelet_Count"]
 		},
 		
 		"Hb" : {
 			"Include" : [	"^Hb", "Hemoglobin", "HGB", "血色素檢查", "血色素", "^HB",
 							"08003C", "08003c", "Hgb", "HgB", "血紅素", "血   色   素",
-							"紅血球色素", ".Hb", "血紅色素檢查"],
+							"紅血球色素", ".Hb", "血紅色素檢查", "HEMOGLOBIN",
+							"HEMOGLOBIN", "H.G.B"],
 			"Exclude" : [	"血色素檢查(PL)", "MCH", "MCV平均血紅素容積",
 							"WBC,RBC,HGB,HCT,MCV", "HbA1c", "HT", "MCH",
 							"平均紅血球色素", "WBC", "HCT", "平均"]
@@ -97,28 +112,35 @@
 			"Include" : [	"HT", "HCT", "Hct", "Hematocrit", "Ht",
 							"HcT", "Hematocrit", "血球容積比",
 							"血球比容值測定", "HEMATOCRIT", "HEMATOCRITE",
-							"Hematoctite", "血球容積", "血球比容值", "HCT"],
+							"Hematoctite", "血球容積", "血球比容值", "HCt"],
 			"Exclude" : [	"MCV", "WBC,RBC,HGB,HCT,MCV", "Hb", "平均", "WBC", "HGB"]
 		},
 		
 		"MCV" : {
 			"Include" : [	"MCV", "M.C.V.", "紅血球平均容積", "平均紅血球體積",
-							"平均紅血球容量"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC"]
+							"平均紅血球容量", "MVC", "M.C.V",
+							"紅血球平均血球容積", "平均血球容積"],
+			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC", "MCH"]
 		},
 		
 		
 		"MCH" : {
-			"Include" : [	"MCH", "平均紅血球容積", "平均紅血球值", "平均紅血球色素",
-							"平均血球色素值", "平均血球色素", "平均色素濃度",
-							"平均血球色素濃度", "平均紅血球血紅濃度",
-							"平均紅血球血色素量", "平均血色素濃度值", "平均血色素",
-							"平均血球血色素濃度", "平均紅血球血紅素濃度", "平均血球血紅素"],
-			"Exclude" : [	"MCHC", "MCV", "WBC,RBC,HGB,HCT,MCV", "RBC"]
+			"Include" : [	"MCH", "平均紅血球值", "平均紅血球色素",
+							"平均血球色素值", "平均血球色素",
+							"平均紅血球血色素量", "平均血色素",
+							"平均血球血紅素", "平均紅血球血紅素量",
+							"紅血球平均血紅素", "平均紅血球血色素",
+							"平均紅血球血紅素", "平均血球血色素",
+							"M.C.H", "平均血紅素"],
+			"Exclude" : [	"MCHC", "MCV", "WBC,RBC,HGB,HCT,MCV", "RBC", "M.C.H.C", "濃度"]
 		},
 		
 		"MCHC" : {
-			"Include" : [	"MCHC", "平均紅血球紅素濃度"],
+			"Include" : [	"MCHC", "平均紅血球紅素濃度", "M.C.H.C", "平均血球色素濃度",
+							"平均紅血球血紅濃度", "平均色素濃度", "平均血球血色素濃度",
+							"平均紅血球血紅素濃度", "平均血色素濃度值", "平均紅血球血色素濃度",
+							"平均血球血素濃度", "血球平均血色素濃度", "平均血球血紅素濃度",
+							"平均細胞血紅蛋白濃度"],
 			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC"]
 		},
 		
@@ -126,8 +148,21 @@
 			"Include" : [	"Platelet", "PLATELET", "血小板計數",
 							"Plt", "PLT", "血小板", "血 小 板計數",
 							"platelet", "PLAT", "Platel"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "MPV", "MCV", "WBC"]
+			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "MPV", "MCV", "WBC", "PCT",
+							"密度", "比率", "分佈", "容積", "寬度", "PDW"]
+		},
+		
+		"PCT" : {
+			"Include" : [	"PCT", "血小板容積比"],
+			"Exclude" : []
+		},
+		
+		"PDW" : {
+			"Include" : [	"PDW", "血小板分布寬度", "血小板分佈寬度",
+							"血小板分怖寬度", "血小板分佈密度"],
+			"Exclude" : []
 		}
+		
 		
 		
 	},

@@ -22,7 +22,7 @@ judge_func <- function(df, rule_v, col){
 }
 
 lab_name_classifier <- function(order_code,
-                                data_folder= 'C:/Users/admin/Desktop/lab_clean_process/'){
+                                data_folder= 'C:/Users/wang/Desktop/lab_clean_process/'){
 
   cat(order_code, '\n')
   # read rule data

@@ -23,7 +23,7 @@ judge_func <- function(df, rule_v, col){
 
 
 lab_unit_classifier <- function(order_code,
-                                data_folder='C:/Users/admin/Desktop/lab_clean_process/'){
+                                data_folder='C:/Users/wang/Desktop/lab_clean_process/'){
   
   cat(order_code, '\n')
   # read rule data
@@ -79,4 +79,20 @@ lab_unit_classifier(order_code='08002C')
 lab_unit_classifier(order_code='08003C')
 lab_unit_classifier(order_code='08004C')
 lab_unit_classifier(order_code='08006C')
+lab_unit_classifier(order_code='08022B')
+lab_unit_classifier(order_code='08024B')
+lab_unit_classifier(order_code='08025B')
+lab_unit_classifier(order_code='08026C')
+lab_unit_classifier(order_code='08036B')
+lab_unit_classifier(order_code='08036C')
+lab_unit_classifier(order_code='08037B')
+lab_unit_classifier(order_code='08038B')
+lab_unit_classifier(order_code='08079B')
+lab_unit_classifier(order_code='10511C')
+lab_unit_classifier(order_code='12013C')
+lab_unit_classifier(order_code='12014C')
+lab_unit_classifier(order_code='12015C')
+lab_unit_classifier(order_code='12193B')
+lab_unit_classifier(order_code='12193C')
+lab_unit_classifier(order_code='08011C')
 

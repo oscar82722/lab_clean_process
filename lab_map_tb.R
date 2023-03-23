@@ -24,14 +24,15 @@ for(order_code in u){
                                    ASSAY_ITEM_NAME,
                                    ASSAY_NAME)], by=c('ORDER_CODE', 'ASSAY_ITEM_NAME'))
   
-  df <- merge(df, unit_file[,.( ORDER_CODE, UNIT_DATA, Assay_Unit)],
+  df <- merge(df, unit_file[,.( ORDER_CODE, UNIT_DATA, Unit_Clean)],
               by=c('ORDER_CODE', 'UNIT_DATA'))
   
-  df <- df[!is.na(ASSAY_NAME) & !is.na(Assay_Unit)]
-  df <- df[,.(N=sum(N)),by=.(ORDER_CODE, ASSAY_NAME, Assay_Unit)]
+  df <- df[!is.na(ASSAY_NAME) & !is.na(Unit_Clean)]
+  df <- df[,.(N=sum(N)),by=.(ORDER_CODE, ASSAY_NAME, Unit_Clean)]
   df <- df[order(ASSAY_NAME,-N)]
   df[,percent:=paste0(round(N/n,4)*100,'%')]
-  colnames(df)[5] <- paste0('percent(n=', n,')')
+  df <- df[,.(ORDER_CODE, ASSAY_NAME, Unit_Clean, Assay_Unit=NA, trans=NA, N, percent)]
+  colnames(df)[7] <- paste0('percent(n=', n,')')
   p <- paste0(data_folder,'/clean/unit/map_unit/', order_code, '.xlsx')
   write_xlsx(df, p)
   cat(order_code, '\n')

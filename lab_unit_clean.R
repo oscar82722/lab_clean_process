@@ -59,19 +59,19 @@ lab_unit_classifier <- function(order_code,
   }
   
   # clean ASSAY_NAME
-  raw_df[,Assay_Unit := do.call(paste, c(.SD, sep = ";")),
+  raw_df[,Unit_Clean := do.call(paste, c(.SD, sep = ";")),
          by=.(ORDER_CODE, ASSAY_ITEM_NAME, UNIT_DATA,N), .SDcols=res_v]
   raw_df <- raw_df[,.(ORDER_CODE,
                       ASSAY_ITEM_NAME,
                       UNIT_DATA,
                       N,
-                      Assay_Unit=ifelse(Assay_Unit==';', '', Assay_Unit))]
+                      Unit_Clean=ifelse(Unit_Clean==';', '', Unit_Clean))]
   
-  raw_df[,Assay_Unit:=gsub('\\;+$', '', Assay_Unit)]
-  raw_df[,Assay_Unit:=gsub('^\\;+', '', Assay_Unit)]
+  raw_df[,Unit_Clean:=gsub('\\;+$', '', Unit_Clean)]
+  raw_df[,Unit_Clean:=gsub('^\\;+', '', Unit_Clean)]
   
   # unique
-  raw_df <- raw_df[,.(N = sum(N)),by=.(ORDER_CODE, UNIT_DATA, Assay_Unit)]
+  raw_df <- raw_df[,.(N = sum(N)),by=.(ORDER_CODE, UNIT_DATA, Unit_Clean)]
   
   # write result
   write_xlsx(raw_df, paste0(data_folder, 'clean/unit/clean_unit/', order_code, '.xlsx'))

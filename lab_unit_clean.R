@@ -7,9 +7,11 @@ library(data.table)
 judge_func <- function(df, rule_v, col){
   if(length(rule_v)!=0){
     df <- df[,colnames(df),with=F]
+    # col to lower
+    df[, col_judge:=tolower(get(col))]
     col_v <- NULL
     for(i in 1:length(rule_v)){
-      df[,r:=ifelse(grepl(rule_v[i], get(col)),1,0)]
+      df[,r:=ifelse(grepl(tolower(rule_v[i]), col_judge),1,0)]
       colnames(df)[dim(df)[2]] <- paste0('r', i)
       col_v <- c(col_v, paste0('r', i))
     }

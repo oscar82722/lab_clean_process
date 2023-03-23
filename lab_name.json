@@ -1,322 +1,584 @@
 {
-	"08002C" : {
-		"WBC" : {
-			"Include" : [	"WBC", "白血球計數", "W.B.C.",
-							"W.B.C", "白 血 球計數", "W.B.C count",
-							"(W.B.C)", "Differential Count(D.C)", "Differential Count(D.C.)",
-							"08002C"],
-			"Exclude" : ["CBC-I\\(WBC,RBC", "CBC\\(WBC,RBC,HGB,HCT,MCV,PLAT\\)"]
-		}
-	},
-	
-	"08003C" : {
-		"Hb" : {
-			"Include" : [	"^Hb", "Hemoglobin", "HGB", "血色素檢查", "血色素", "^HB",
-							"08003C", "08003c", "Hgb", "HgB", "血紅素", "血   色   素"],
-			"Exclude" : [	"血色素檢查(PL)", "MCH", "MCV平均血紅素容積"]
-		}
-	},
-	
-	"08004C" : {
-		"HT" : {
-			"Include" : [	"HT", "HCT", "Hct", "Hematocrit", "Ht",
-							"HcT", "Hematocrit", "血球容積比",
-							"血球比容值測定", "HEMATOCRIT", "HEMATOCRITE",
-							"Hematoctite", "血球容積", "血球比容值"],
-			"Exclude" : [	"MCV"]
-		},
-		
-		"MCH" : {
-			"Include" : [	"MCH", "平均紅血球容積", "平均紅血球值"],
-			"Exclude" : [	"MCHC", "MCV"]
-		},
-		
-		"MCV" : {
-			"Include" : [	"MCV", "M.C.V."],
-			"Exclude" : []
-		},
-		
-		"MCHC" : {
-			"Include" : [	"MCHC"],
-			"Exclude" : []
-		}
-	},
-	
-	"08006C" : {
-		"Platelet_Count" : {
-			"Include" : [	"Platelet", "PLATELET", "血小板計數",
-							"Plt", "PLT", "血小板", "血 小 板計數",
-							"platelet", "PLAT", "Platel"],
-			"Exclude" : []
-		},
-		
-		"MPV" : {
-			"Include" : [	"MPV"],
-			"Exclude" : []
-		}
-		
-	},
-	
-	"08011C" : {
-		"WBC" : {
-			"Include" : [	"WBC", "白血球計數", "W.B.C.",
-							"W.B.C", "白 血 球計數", "W.B.C count",
-							"(W.B.C)", "Differential Count(D.C)", "Differential Count(D.C.)",
-							"08002C", "白血球"],
-			"Exclude" : [	"CBC-I\\(WBC,RBC", "CBC\\(WBC,RBC,HGB,HCT,MCV,PLAT\\)",
-							"WBC,RBC,HGB,HCT,MCV", "RBC", "HGB", "RB", "嗜",
-							"帶狀白血球"]
-		},
-		
-		"RBC" : {
-			"Include" : [	"RBC", "R.B.C", "RBC", "R.B.C.", "Rbc", "紅血球數", "紅 血 球計數",
-							"紅血球計數"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "WBC", "MCH", "MCHC", "MCV", "RDW",
-						"變異係數"]
-		},
-		
-		"RDW" : {
-			"Include" : [	"RDW", "紅血球分布寬度", "紅血球體積分布寬度",
-							"紅血球分佈寬度", "紅血球分佈寬"],
-			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "CV", "SD", "S",
-							"變異數", "標準差", "變異係數"]
-		},
-		
-		"RDW CV" : {
-			"Include" : [	"變異數", "CV", "變異係數"],
-			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "SD", "S", "標準差",
-							"MCV"]
-		},
-		
-		"RDW SD" : {
-			"Include" : [	"標準差", "SD", "RDW-S"],
-			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "RBC", "CV", "變異數", "變異係數"]
-		},
-		
-		"MPV" : {
-			"Include" : [	"MPV", "平均血小板容積"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "Platelet_Count"]
-		},
-		
-		"Hb" : {
-			"Include" : [	"^Hb", "Hemoglobin", "HGB", "血色素檢查", "血色素", "^HB",
-							"08003C", "08003c", "Hgb", "HgB", "血紅素", "血   色   素",
-							"紅血球色素", ".Hb", "血紅色素檢查", "HEMOGLOBIN",
-							"HEMOGLOBIN", "H.G.B"],
-			"Exclude" : [	"血色素檢查(PL)", "MCH", "MCV平均血紅素容積",
-							"WBC,RBC,HGB,HCT,MCV", "HbA1c", "HT", "MCH",
-							"平均紅血球色素", "WBC", "HCT", "平均"]
-		},
-		
-		"HT" : {
-			"Include" : [	"HT", "HCT", "Hct", "Hematocrit", "Ht",
-							"HcT", "Hematocrit", "血球容積比",
-							"血球比容值測定", "HEMATOCRIT", "HEMATOCRITE",
-							"Hematoctite", "血球容積", "血球比容值", "HCt"],
-			"Exclude" : [	"MCV", "WBC,RBC,HGB,HCT,MCV", "Hb", "平均", "WBC", "HGB"]
-		},
-		
-		"MCV" : {
-			"Include" : [	"MCV", "M.C.V.", "紅血球平均容積", "平均紅血球體積",
-							"平均紅血球容量", "MVC", "M.C.V",
-							"紅血球平均血球容積", "平均血球容積"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC", "MCH"]
-		},
-		
-		
-		"MCH" : {
-			"Include" : [	"MCH", "平均紅血球值", "平均紅血球色素",
-							"平均血球色素值", "平均血球色素",
-							"平均紅血球血色素量", "平均血色素",
-							"平均血球血紅素", "平均紅血球血紅素量",
-							"紅血球平均血紅素", "平均紅血球血色素",
-							"平均紅血球血紅素", "平均血球血色素",
-							"M.C.H", "平均血紅素"],
-			"Exclude" : [	"MCHC", "MCV", "WBC,RBC,HGB,HCT,MCV", "RBC", "M.C.H.C", "濃度"]
-		},
-		
-		"MCHC" : {
-			"Include" : [	"MCHC", "平均紅血球紅素濃度", "M.C.H.C", "平均血球色素濃度",
-							"平均紅血球血紅濃度", "平均色素濃度", "平均血球血色素濃度",
-							"平均紅血球血紅素濃度", "平均血色素濃度值", "平均紅血球血色素濃度",
-							"平均血球血素濃度", "血球平均血色素濃度", "平均血球血紅素濃度",
-							"平均細胞血紅蛋白濃度"],
-			"Exclude" : ["WBC,RBC,HGB,HCT,MCV", "RBC"]
-		},
-		
-		"Platelet_Count" : {
-			"Include" : [	"Platelet", "PLATELET", "血小板計數",
-							"Plt", "PLT", "血小板", "血 小 板計數",
-							"platelet", "PLAT", "Platel"],
-			"Exclude" : [	"WBC,RBC,HGB,HCT,MCV", "MPV", "MCV", "WBC", "PCT",
-							"密度", "比率", "分佈", "容積", "寬度", "PDW"]
-		},
-		
-		"PCT" : {
-			"Include" : [	"PCT", "血小板容積比"],
-			"Exclude" : []
-		},
-		
-		"PDW" : {
-			"Include" : [	"PDW", "血小板分布寬度", "血小板分佈寬度",
-							"血小板分怖寬度", "血小板分佈密度"],
-			"Exclude" : []
-		}
-		
-		
-		
-	},
-	
-	"08022B" : {
-		"FIBRINOGEN" : {
-			"Include" : [	"FIBRINOGEN", "Fibrinogen"],
-			"Exclude" : []
-		}
-		
-	},
-	
-	"08024B" : {
-		
-		"FIBRINOGEN" : {
-			"Include" : [	"FIBRINOGEN", "Fibrinogen", "fibrinogen", 
-							"Fibrinogen", "纖維蛋白原測定", "纖維蛋白原",
-							"Fibrinog", "FIB", "Fib"],
-			"Exclude" : [	"免疫比濁法", "FIB4"]
-		},
-		
-		"FIBRINOGEN(immunoturbidimetric method)" : {
-			"Include" : [	"免疫比濁法"],
-			"Exclude" : []
-		}
-	},
-	
-	"08025B" : {
-		
-		"Thrombin Time" : {
-			"Include" : [	"Thrombin Time", "Thrombin T", "Thrombin time",
-							"凝血脢時間", "THROMBIN TIME", "^TT$", "T.T",
-							"Thrombin  time", "THROMBINTIME"],
-			"Exclude" : []
-		}
-	},
-	
-	"08026C" : {
-		
-		"Prothrombin Time" : {
-			"Include" : [	"PT", "凝血脢原時間", "P.T.", "Prothrombine time",
-							"凝血", "P.T", "Prothrombin Time", "Prothrombin time",
-							"Pro.T.Control", "Pro. time(INR)", "Pro. time (INR)",
-							"Prothromin time", "Prothrom time", "PROTHROMBIN TIME",
-							"Pro. Time", "Prothrombim Time", "ProthrombinTime",
-							"Prothrombin time", "Pro. time", "Prothrombintime",
-							"Prothrobin time", "prothrombin time", "Prothrombin",
-							"Prothromin Time", "Prothrombin  time", "Prothrobin Time",
-							"Prothombin time", "Prothrombin  time", "ProthrobinTime",
-							"Pro.T.", "pt"],
-			"Exclude" : [	"MNPT", "APTT", "PTRATIO", "EPITH. CELL", "國際標準凝血時間比",
-							"INR", "GOT,GPT,Albumin,LDH,Total Protein,ALK-PTASE",
-							"凝血脢原國際標準比值", "部"]
-		}
-	},
-	
-	"08036B" : {
-		
-		"APTT" : {
-			"Include" : [	"APTT", "部分凝血活脢原時間", "aPTT", "部",
-							"A.P.T.T", "APT.T.", "^PTT", "Aptt", "P.T.T.",
-							"P.T.T"],
-			"Exclude" : [	"MNAPTT", "MNaPTT", "NMAPTT"]
-		}
-	},
-	
-	"08036C" : {
-		
-		"APTT" : {
-			"Include" : [	"APTT", "部分凝血活脢原時間", "aPTT", "部",
-							"A.P.T.T", "APT.T.", "Aptt", "PT 凝血脢原時間",
-							"^PTT", "P.T.T.", "P.T.T"],
-			"Exclude" : [	"MNAPTT", "MNaPTT", "NMAPTT"]
-		}
-	},
-	
-	"08037B" : {
-		
-		"FDP_qualitative" : {
-			"Include" : [	"FDP"],
-			"Exclude" : [ "定量"]
-		}
-	},
-	
-	"08038B" : {
-		
-		"FDP_quantitative" : {
-			"Include" : [	"定量", "quantitative", "FDP",
-							"Fibrin degradation product", "Fibrin degradation product",
-							"F.D.P.", "纖維元蛋白分化物", "纖維蛋白分化物", "纖維原蛋白分化物"],
-			"Exclude" : [	"定性"]
-		}
-	},
-	
-	"08079B" : {
-		
-		"D-Dimer" : {
-			"Include" : [	"dimer", "Dimer", "DIMER", 
-							"雙合試驗", "雙合體試驗", "D-D", "D-D",
-							"D- diamer", "diamer"],
-			"Exclude" : [	"FDP"]
-		}
-	},
-	
-	"10511C" : {
-		
-		"Digoxin" : {
-			"Include" : [	"Digoxin", "長葉毛地黃", "DIGOXIN", "毛地黃",
-							"DGXN", "毛地黃素"],
-			"Exclude" : []
-		}
-	},
-	
-	"12193B" : {
-		
-		"BNP" : {
-			"Include" : [	"BNP", "Ｂ型", "B型", "B-Type", "B 型", "B-型", "B-type",
-							"BNp"],
-			"Exclude" : []
-		}
-	},
-	
-	"12193C" : {
-		
-		"BNP" : {
-			"Include" : [	"BNP", "Ｂ型", "B型", "B-Type", "B 型", "B-型", "B-type",
-							"BNp"],
-			"Exclude" : []
-		}
-	},
-	
-	"12013C" : {
-		
-		"C.R.P.(Latex fixation test)" : {
-			"Include" : [	"乳膠凝集法", "Latex"],
-			"Exclude" : []
-		}
-	},
-	
-	"12014C" : {
-		
-		"C.R.P.(Immunodiffusion method)" : {
-			"Include" : [	"免疫擴散", "immunodifusion"],
-			"Exclude" : []
-		}
-	},
-	
-	"12015C" : {
-		
-		"C.R.P.(Nephelometry)" : {
-			"Include" : [	"比濁法", "Nephelometry", "nephelometry",
-							"NEPHELOMETRY", "免疫比濁", "Nephelomet"],
-			"Exclude" : []
-		}
-	}
-	
+  "08002C": {
+    "WBC": {
+      "Include": [
+        "wbc",
+        "白血球計數",
+        "w.b.c.",
+        "w.b.c",
+        "白 血 球計數",
+        "w.b.c count",
+        "(w.b.c)",
+        "differential count(d.c)",
+        "differential count(d.c.)",
+        "08002c"
+      ],
+      "Exclude": [
+        "cbc-i\\(wbc,rbc",
+        "cbc\\(wbc,rbc,hgb,hct,mcv,plat\\)"
+      ]
+    }
+  },
+  "08003C": {
+    "Hb": {
+      "Include": [
+        "^hb",
+        "hemoglobin",
+        "hgb",
+        "血色素檢查",
+        "血色素",
+        "08003c",
+        "血紅素",
+        "血   色   素"
+      ],
+      "Exclude": [
+        "血色素檢查(pl)",
+        "mch",
+        "mcv平均血紅素容積"
+      ]
+    }
+  },
+  "08004C": {
+    "HT": {
+      "Include": [
+        "ht",
+        "hct",
+        "hematocrit",
+        "血球容積比",
+        "血球比容值測定",
+        "hematocrite",
+        "hematoctite",
+        "血球容積",
+        "血球比容值"
+      ],
+      "Exclude": "mcv"
+    },
+    "MCH": {
+      "Include": [
+        "mch",
+        "平均紅血球容積",
+        "平均紅血球值"
+      ],
+      "Exclude": [
+        "mchc",
+        "mcv"
+      ]
+    },
+    "MCV": {
+      "Include": [
+        "mcv",
+        "m.c.v."
+      ],
+      "Exclude": []
+    },
+    "MCHC": {
+      "Include": [
+		"mchc"
+	  ],
+      "Exclude": []
+    }
+  },
+  "08006C": {
+    "Platelet_Count": {
+      "Include": [
+        "platelet",
+        "血小板計數",
+        "plt",
+        "血小板",
+        "血 小 板計數",
+        "plat",
+        "platel"
+      ],
+      "Exclude": []
+    },
+    "MPV": {
+      "Include": [
+		"mpv"
+	   ],
+      "Exclude": []
+    }
+  },
+  "08011C": {
+    "WBC": {
+      "Include": [
+        "wbc",
+        "白血球計數",
+        "w.b.c.",
+        "w.b.c",
+        "白 血 球計數",
+        "w.b.c count",
+        "(w.b.c)",
+        "differential count(d.c)",
+        "differential count(d.c.)",
+        "08002c",
+        "白血球"
+      ],
+      "Exclude": [
+        "cbc-i\\(wbc,rbc",
+        "cbc\\(wbc,rbc,hgb,hct,mcv,plat\\)",
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "hgb",
+        "rb",
+        "嗜",
+        "帶狀白血球"
+      ]
+    },
+    "RBC": {
+      "Include": [
+        "rbc",
+        "r.b.c",
+        "r.b.c.",
+        "紅血球數",
+        "紅 血 球計數",
+        "紅血球計數"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "wbc",
+        "mch",
+        "mchc",
+        "mcv",
+        "rdw",
+        "變異係數"
+      ]
+    },
+    "RDW": {
+      "Include": [
+        "rdw",
+        "紅血球分布寬度",
+        "紅血球體積分布寬度",
+        "紅血球分佈寬度",
+        "紅血球分佈寬"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "cv",
+        "sd",
+        "s",
+        "變異數",
+        "標準差",
+        "變異係數",
+		"標準偏差"
+      ]
+    },
+    "RDW CV": {
+      "Include": [
+        "變異數",
+        "cv",
+        "變異係數"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "sd",
+        "s",
+        "標準差",
+		"標準偏差",
+        "mcv"
+      ]
+    },
+    "RDW SD": {
+      "Include": [
+        "標準差",
+        "sd",
+        "rdw-s"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "cv",
+        "變異數",
+        "變異係數"
+      ]
+    },
+    "MPV": {
+      "Include": [
+        "mpv",
+        "平均血小板容積"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "platelet_count"
+      ]
+    },
+    "Hb": {
+      "Include": [
+        "^hb",
+        "hemoglobin",
+        "hgb",
+        "血色素檢查",
+        "血色素",
+        "08003c",
+        "血紅素",
+        "血   色   素",
+        "紅血球色素",
+        ".hb",
+        "血紅色素檢查",
+        "h.g.b"
+      ],
+      "Exclude": [
+        "血色素檢查(pl)",
+        "mch",
+        "mcv平均血紅素容積",
+        "wbc,rbc,hgb,hct,mcv",
+        "hba1c",
+        "ht",
+        "平均紅血球色素",
+        "wbc",
+        "hct",
+        "平均"
+      ]
+    },
+    "HT": {
+      "Include": [
+        "ht",
+        "hct",
+        "hematocrit",
+        "血球容積比",
+        "血球比容值測定",
+        "hematocrite",
+        "hematoctite",
+        "血球容積",
+        "血球比容值"
+      ],
+      "Exclude": [
+        "mcv",
+        "wbc,rbc,hgb,hct,mcv",
+        "hb",
+        "平均",
+        "wbc",
+        "hgb"
+      ]
+    },
+    "MCV": {
+      "Include": [
+        "mcv",
+        "m.c.v.",
+        "紅血球平均容積",
+        "平均紅血球體積",
+        "平均紅血球容量",
+        "mvc",
+        "m.c.v",
+        "紅血球平均血球容積",
+        "平均血球容積"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "mch"
+      ]
+    },
+    "MCH": {
+      "Include": [
+        "mch",
+        "平均紅血球值",
+        "平均紅血球色素",
+        "平均血球色素值",
+        "平均血球色素",
+        "平均紅血球血色素量",
+        "平均血色素",
+        "平均血球血紅素",
+        "平均紅血球血紅素量",
+        "紅血球平均血紅素",
+        "平均紅血球血色素",
+        "平均紅血球血紅素",
+        "平均血球血色素",
+        "m.c.h",
+        "平均血紅素"
+      ],
+      "Exclude": [
+        "mchc",
+        "mcv",
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc",
+        "m.c.h.c",
+        "濃度"
+      ]
+    },
+    "MCHC": {
+      "Include": [
+        "mchc",
+        "平均紅血球紅素濃度",
+        "m.c.h.c",
+        "平均血球色素濃度",
+        "平均紅血球血紅濃度",
+        "平均色素濃度",
+        "平均血球血色素濃度",
+        "平均紅血球血紅素濃度",
+        "平均血色素濃度值",
+        "平均紅血球血色素濃度",
+        "平均血球血素濃度",
+        "血球平均血色素濃度",
+        "平均血球血紅素濃度",
+        "平均細胞血紅蛋白濃度"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "rbc"
+      ]
+    },
+    "Platelet_Count": {
+      "Include": [
+        "platelet",
+        "血小板計數",
+        "plt",
+        "血小板",
+        "血 小 板計數",
+        "plat",
+        "platel"
+      ],
+      "Exclude": [
+        "wbc,rbc,hgb,hct,mcv",
+        "mpv",
+        "mcv",
+        "wbc",
+        "pct",
+        "密度",
+        "比率",
+        "分佈",
+        "容積",
+        "寬度",
+        "pdw"
+      ]
+    },
+    "PCT": {
+      "Include": [
+        "pct",
+        "血小板容積比"
+      ],
+      "Exclude": []
+    },
+    "PDW": {
+      "Include": [
+        "pdw",
+        "血小板分布寬度",
+        "血小板分佈寬度",
+        "血小板分怖寬度",
+        "血小板分佈密度"
+      ],
+      "Exclude": []
+    }
+  },
+  "08022B": {
+    "FIBRINOGEN": {
+      "Include": "fibrinogen",
+      "Exclude": []
+    }
+  },
+  "08024B": {
+    "FIBRINOGEN": {
+      "Include": [
+        "fibrinogen",
+        "纖維蛋白原測定",
+        "纖維蛋白原",
+        "fibrinog",
+        "fib"
+      ],
+      "Exclude": [
+        "免疫比濁法",
+        "fib4"
+      ]
+    },
+    "FIBRINOGEN(immunoturbidimetric method)": {
+      "Include": "免疫比濁法",
+      "Exclude": []
+    }
+  },
+  "08025B": {
+    "Thrombin Time": {
+      "Include": [
+        "thrombin time",
+        "thrombin t",
+        "凝血脢時間",
+        "^tt$",
+        "t.t",
+        "thrombin  time",
+        "thrombintime"
+      ],
+      "Exclude": []
+    }
+  },
+  "08026C": {
+    "Prothrombin Time": {
+      "Include": [
+        "pt",
+        "凝血脢原時間",
+        "p.t.",
+        "prothrombine time",
+        "凝血",
+        "p.t",
+        "prothrombin time",
+        "pro.t.control",
+        "pro. time(inr)",
+        "pro. time (inr)",
+        "prothromin time",
+        "prothrom time",
+        "pro. time",
+        "prothrombim time",
+        "prothrombintime",
+        "prothrobin time",
+        "prothrombin",
+        "prothrombin  time",
+        "prothombin time",
+        "prothrobintime",
+        "pro.t."
+      ],
+      "Exclude": [
+        "mnpt",
+        "aptt",
+        "ptratio",
+        "epith. cell",
+        "國際標準凝血時間比",
+        "inr",
+        "got,gpt,albumin,ldh,total protein,alk-ptase",
+        "凝血脢原國際標準比值",
+        "部",
+		"Immediate Patient",
+		"Incubation Patient",
+		"EPITH\\.CELL",
+		"Surgical pathology"
+      ]
+    }
+  },
+  "08036B": {
+    "APTT": {
+      "Include": [
+        "aptt",
+        "部分凝血活脢原時間",
+        "部",
+        "a.p.t.t",
+        "apt.t.",
+        "^ptt",
+        "p.t.t.",
+        "p.t.t"
+      ],
+      "Exclude": [
+        "mnaptt",
+        "nmaptt"
+      ]
+    }
+  },
+  "08036C": {
+    "APTT": {
+      "Include": [
+        "aptt",
+        "部分凝血活脢原時間",
+        "部",
+        "a.p.t.t",
+        "apt.t.",
+        "pt 凝血脢原時間",
+        "^ptt",
+        "p.t.t.",
+        "p.t.t"
+      ],
+      "Exclude": [
+        "mnaptt",
+        "nmaptt",
+		"平均值"
+      ]
+    }
+  },
+  "08037B": {
+    "FDP_qualitative": {
+      "Include": "fdp",
+      "Exclude": "定量"
+    }
+  },
+  "08038B": {
+    "FDP_quantitative": {
+      "Include": [
+        "定量",
+        "quantitative",
+        "fdp",
+        "fibrin degradation product",
+        "f.d.p.",
+        "纖維元蛋白分化物",
+        "纖維蛋白分化物",
+        "纖維原蛋白分化物"
+      ],
+      "Exclude": "定性"
+    }
+  },
+  "08079B": {
+    "D-Dimer": {
+      "Include": [
+        "dimer",
+        "雙合試驗",
+        "雙合體試驗",
+        "d-d",
+        "d- diamer",
+        "diamer"
+      ],
+      "Exclude": "fdp"
+    }
+  },
+  "10511C": {
+    "Digoxin": {
+      "Include": [
+        "digoxin",
+        "長葉毛地黃",
+        "毛地黃",
+        "dgxn",
+        "毛地黃素"
+      ],
+      "Exclude": []
+    }
+  },
+  "12193B": {
+    "BNP": {
+      "Include": [
+        "bnp",
+        "ｂ型",
+        "b型",
+        "b-type",
+        "b 型",
+        "b-型"
+      ],
+      "Exclude": []
+    }
+  },
+  "12193C": {
+    "BNP": {
+      "Include": [
+        "bnp",
+        "ｂ型",
+        "b型",
+        "b-type",
+        "b 型",
+        "b-型"
+      ],
+      "Exclude": []
+    }
+  },
+  "12013C": {
+    "C.R.P.(Latex fixation test)": {
+      "Include": [
+        "乳膠凝集法",
+        "latex"
+      ],
+      "Exclude": []
+    }
+  },
+  "12014C": {
+    "C.R.P.(Immunodiffusion method)": {
+      "Include": [
+        "免疫擴散",
+        "immunodifusion"
+      ],
+      "Exclude": []
+    }
+  },
+  "12015C": {
+    "C.R.P.(Nephelometry)": {
+      "Include": [
+        "比濁法",
+        "nephelometry",
+        "免疫比濁",
+        "nephelomet"
+      ],
+      "Exclude": []
+    }
+  }
 }

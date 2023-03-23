@@ -1,0 +1,10 @@
+# Object file
+*.o
+*.xlsx
+
+# Ada Library Information
+*.ali
+build/
+dist/
+/temp/
+/setting

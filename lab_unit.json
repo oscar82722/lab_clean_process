@@ -1,315 +1,520 @@
 {
-	"ul": {
-		"Include" : [	"^/UL", "^/μL", "^/uL", "^/ul", "^μL", "^uL", "^UL",
-						"^/μl", "^μl", "^ul", "^\\(\\/ul\\)"],
-		"Exclude" : []
-	},
-	
-	"10/ul":{
-		"Include" : [	"10/UL", "10/ul"],
-		"Exclude" : []
-	},
-	
-	"100/ul":{
-		"Include" : [	"100/ul", "1000／μl"],
-		"Exclude" : []
-	},
+  "ul": {
+    "Include": [
+      "^/ul",
+      "^/μl",
+      "^μl",
+      "^ul",
+      "^\\(\\/ul\\)"
+    ],
+    "Exclude": []
+  },
+  "10/ul": {
+    "Include": "10/ul",
+    "Exclude": []
+  },
+  "100/ul": {
+    "Include": [
+      "100/ul",
+      "1000／μl"
+    ],
+    "Exclude": []
+  },
+  "1000/ul": {
+    "Include": [
+      "10\\^3/ul",
+      "10\\^3/μl",
+      "10 3/μl",
+      "1000/ul",
+      "x10\\︿3/ul",
+      "x10\\^3/ul",
+      "x千/ul",
+      "k/ul",
+      "k/μl",
+      "10\\^3 /ul",
+      "10\\^/3ul",
+      "10 3/ul",
+      "千/ul",
+      "10e3/ul",
+      "10*3/ul",
+      "x10\\*3/ul",
+      "\\*10\\(3\\)/ul",
+      "x103/μl",
+      "/10\\^3μl",
+      "10\\*3/ul",
+      "\\*10\\^3/ul",
+      "10x3/ul",
+      "10 \\^3/ul",
+      "千/μl",
+      "10\\︿3/ul",
+      "x103/ul",
+      "x10\\(3\\)ul",
+      "x1000/μl",
+      "103/ul",
+      "10x3/μl",
+      "x1000/ul",
+      "\\*10\\^3ul",
+      "1000/μl",
+      "x10e3/ul",
+      "10\\^\\;3/ul",
+      "x10\\^3 /ul",
+      "x10\\.e3/ul",
+      "×1000 /μl",
+      "10\\*3ul",
+      "10\\^3ul",
+      "103/ul",
+      "10×3/ul",
+      "10\\*3/μl",
+      "仟/ ul",
+      "10\\^3 / μl",
+      "仟/ul",
+      "10\\[3\\]/ul",
+      "10\\'3/ul",
+	  "10\\~3/ul",
+	  "10\\-3/ul",
+	  "10m3/ul"
+    ],
+    "Exclude": []
+  },
+  "10^4/ul": {
+    "Include": [
+      "10\\^4/ul",
+      "10\\^4 /ul",
+      "10000/μl",
+      "10000/ul",
+      "萬/ul",
+      "\\*10\\^4/ul",
+      "\\* 10\\^4 / ul",
+      "104/ul",
+      "104/cu.mm",
+      "10\\︿4/ul"
+    ],
+    "Exclude": [
+      "10\\^6/ul",
+      "百萬/ul",
+	  "100萬/ul"
+    ]
+  },
+  "10^6/ul": {
+    "Include": [
+      "10\\^6/ul",
+      "million/ul",
+      "10\\^6/μl",
+      "10︿6/ul",
+      "10 \\^6/ul",
+      "10 6/ul",
+      "10 6/μl",
+      "10\\*6/ul",
+      "milon/ul",
+      "×10\\^6/μl",
+      "10e6/ul",
+      "1000000/ul",
+      "×1000000／μl",
+      "x10.e6ul",
+      "x106/ul",
+      "\\*10\\^6/μl",
+      "1000000/μl",
+      "106/ul",
+      "百萬/ul",
+      "/10\\^6μl",
+      "mil/ul",
+      "mill/ul",
+      "x10e6/ul",
+      "10\\^6ul",
+      "x10\\^6 /ul",
+      "x10\\*6ul",
+      "10\\^6 /ul",
+      "10x6/ul",
+      "\\*10\\(6\\)/ul",
+      "10\\(6\\)ul",
+      "10×6/ul",
+      "10\\*6/μl",
+      "㏕/ul",
+      "10m6/ul",
+      "\\*106/ul",
+      "106/ul",
+      "10^6 / μl",
+      "x10\\’6/ul",
+      "10\\'6/ul",
+      "106/μl",
+      "\\*10 6/ul",
+      "million/μl",
+	  "10\\^6 / μl",
+	  "10\\-6/ul",
+	  "10x6/μl",
+	  "100萬/ul"
+    ],
+    "Exclude": "10\\^4/ul"
+  },
+  "m/ul": {
+    "Include": [
+      "m/μl",
+      "m/ul"
+    ],
+    "Exclude": []
+  },
+  "g/ul": {
+    "Include": "g/ul",
+    "Exclude": []
+  },
+  "mg/ml": {
+    "Include": "mg/ml",
+    "Exclude": []
+  },
+  "ng/ml": {
+    "Include": [
+      "ng/ml",
+      "ng/ml(feu)",
+      "ng／ml"
+    ],
+    "Exclude": []
+  },
+  "ug/ml": {
+    "Include": [
+      "ug/ml",
+      "μg/ml",
+      "ug /ml",
+      "ug feu/ml"
+    ],
+    "Exclude": "mg/l"
+  },
+  "1000/ml": {
+    "Include": [
+      "1000/ml",
+      "10\\*3/ml",
+      "10\\^3/ml"
+    ],
+    "Exclude": []
+  },
+  "10^6/ml": {
+    "Include": [
+      "10\\^6/ml",
+      "百萬/ml"
+    ],
+    "Exclude": []
+  },
+  "pg/ml": {
+    "Include": "pg/ml",
+    "Exclude": []
+  },
+  "g/dl": {
+    "Include": [
+      "^g/dl",
+      "^ｇ/dl",
+      "^g\\／dl",
+      "^g /dl",
+      "ghb/dl",
+      "公克/dl",
+      "g/dl",
+      "\\(g/dl\\)",
+	  "g\\?dl",
+	  "gdL"
+    ],
+    "Exclude": [
+	"mg/dl",
+	"ug/dL",
+	"ng/dl"
+	]
+  },
+  "mg/dl": {
+    "Include": [
+      "mg/dl",
+      "mg /dl",
+      "mg／dl"
+    ],
+    "Exclude": []
+  },
+  "ng/dl": {
+    "Include": "ng/dl",
+    "Exclude": []
+  },
+  "ug/dl": {
+    "Include": "ug/dl",
+    "Exclude": []
+  },
+  "gm/dl": {
+    "Include": [
+      "gm/dl",
+      "gm /dl"
+    ],
+    "Exclude": []
+  },
+  "gl/dl": {
+    "Include": "gl/dl",
+    "Exclude": []
+  },
+  "ml/dl": {
+    "Include": "ml/dl",
+    "Exclude": []
+  },
+  "1000/dl": {
+    "Include": "千/dl",
+    "Exclude": []
+  },
+  "10000/dl": {
+    "Include": [
+	"萬/dl"
+	],
+    "Exclude": ["百萬/dl"]
+  },
+  "10^6/dl": {
+    "Include": [
+	"10\\^6/dl",
+	"百萬/dl"
+	],
+    "Exclude": []
+  },
+  "g/l": {
+    "Include": "^g/l",
+    "Exclude": []
+  },
+  "mg/l": {
+    "Include": [
+      "mg/lfeu",
+      "mg/l feu",
+      "mg/l(feu)",
+      "mg/l",
+      "mg／l"
+    ],
+    "Exclude": "μg/ml"
+  },
+  "ng/l": {
+    "Include": "ng/l",
+    "Exclude": []
+  },
+  "ug/l": {
+    "Include": [
+      "^ug/l",
+      "^μg/l"
+    ],
+    "Exclude": []
+  },
+  "u/l": {
+    "Include": "u/l",
+    "Exclude": []
+  },
+  "mmol/l": {
+    "Include": [
+		"mmol/l"
+	],
+    "Exclude": []
+  },
+  "cmm": {
+    "Include": [
+      "^cmm",
+      "^/cmm"
+    ],
+    "Exclude": [
+		"10x3/cmm",
+		"x1000/cmm"
+	]
+  },
+  "10^3/cmm": {
+    "Include": [
+      "10\\^3/cmm",
+      "1000/cmm",
+	  "10x3/cmm"
+    ],
+    "Exclude": []
+  },
+  "10^4/cmm": {
+    "Include": [
+		"萬/cmm",
+		"10000/cmm",
+		"10\\^4/cmm"
+	],
+    "Exclude": []
+  },
+  "10^6/cmm": {
+    "Include": [
+		"10\\^6/cmm",
+		"10x6/cmm",
+		"\\＊mil/cmm"
+	],
+    "Exclude": []
+  },
+  "cumm": {
+    "Include": [
+      "^cumm",
+      "^/cu.mm",
+      "^/cumm",
+      "^cu.mm"
+    ],
+    "Exclude": []
+  },
+  "100/cumm": {
+    "Include": "10\\^2/cu.mm",
+    "Exclude": []
+  },
+  "1000/cumm": {
+    "Include": [
+      "x1000/cumm",
+      "x10\\^3/cumm",
+      "千/cumm",
+      "\\*10\\^3/cumm",
+      "10\\^3/cu.mm",
+      "仟/cumm",
+      "x10\\*3/cumm",
+      "1000/cumm",
+      "k/cumm",
+      "10\\^3/cumm",
+      "103/cumm",
+      "10x3/cumm"
+    ],
+    "Exclude": []
+  },
+  "10000/cumm": {
+    "Include": [
+      "萬/cumm",
+      "10\\^4/cumm"
+    ],
+    "Exclude": "百萬"
+  },
+  "10^6/cumm": {
+    "Include": [
+      "10\\^6/cumn",
+      "百萬/cum",
+      "10\\^6/cu.mm",
+      "mil/cumm",
+      "million/cumm",
+      "10x6/cum",
+      "\\*10\\^6/cumm",
+      "10\\^6/cumm",
+      "㏕/cumm"
+    ],
+    "Exclude": []
+  },
+  "m/cumm": {
+    "Include": [
+	"m/cumm"
+	],
+    "Exclude": []
+  },
+  "g/gl": {
+    "Include": [
+	"g/gl"
+	],
+    "Exclude": []
+  },
+  "mm": {
+    "Include": [
+	"^/mm"
+	],
+    "Exclude": [
+	"^/mm\\^3",
+	"^/mm3"
+	]
+  },
+  
+  "1000/mm": {
+    "Include": [
+		"10\\^3/mm"
+	],
+    "Exclude": ""
+  },
+  
+  "10^6/mm": {
+    "Include": [
+		"10\\^6/mm"
+	],
+    "Exclude": [ "3$",
+				 "10\\^6/mml"]
+  },
+  
+  "mm^3": {
+    "Include": [
+	"^/mm\\^3",
+	"^mm3"
+	],
+    "Exclude": []
+  },
+  
+  "10^3/mm^3": {
+    "Include": [
+      "10\\^3/mm\\^3",
+      "10\\^3/mm3",
+	  "千/mm\\^3",
+	  "103/mm3",
+	  "10\\*3/mm\\*3"
+    ],
+    "Exclude": []
+  },
+  
+  "10^4/mm^3": {
+    "Include": [
+      "萬/mm3",
+	  "10\\^4/mm3"
+    ],
+    "Exclude": []
+  },
+  
+  "10^6/mm^3": {
+    "Include": [
+      "10\\^6/mm3",
+	  "百萬/mm\\^3",
+	  "10\\^6/mm\\^3",
+	  "106/mm3"
+    ],
+    "Exclude": []
+  },
 
-	"1000/ul" : {
-		"Include" : [	"10\\^3/uL", "10\\^3/μL", "10\\^3/ul", "10 3/μL",
-						"1000/uL", "x10\\︿3/ul", "10\\^3/μl", "X10\\^3/UL",
-						"x千/ul", "K/uL", "k/μL", "10\\^3 /uL", "10\\^/3ul",
-						"10 3/ul", "千/uL", "1000/ul", "10e3/uL", "10*3/UL",
-						"x10\\*3/ul", "\\*10\\(3\\)/uL", "千/ul", "X103/μl",
-						"/10\\^3μl", "10\\*3/UL", "\\*10\\^3/UL", "10x3/uL",
-						"10 \\^3/uL", "千/μl", "10\\︿3/ul", "10\\^3/UL", 
-						"x103/ul", "K/μL", "10\\*3/ul", "10 3/uL", "K/UL", "K/ul",
-						"X10\\(3\\)uL", "10\\︿3/uL", "x1000/μL", "103/uL",
-						"10x3/μl", "k/ul", "千/UL", "X1000/UL", "\\*10\\^3uL",
-						"1000/μl", "x10e3/ul", "k/UL", "10\\^\\;3/ul",
-						"X10\\^3 /UL", "x10\\^3 /ul", "X10\\^3 /UL",
-						"x10\\.e3/uL", "10\\*3/uL", "×1000 /μl", "K/μl",
-						"10\\*3uL", "1000/UL", "10\\^3uL", "103/uL",
-						"10\\^3 /ul", "10×3/uL", "10\\*3/μL", "103/ul",
-						"103/uL", "仟/ UL", "103/uL", "10\\^3 / μl", "k/uL",
-						"仟/ul", "10E3/UL", "10x3/ul",
-						"10\\*3ul", "10\\[3\\]/uL", "10\\︿3/UL", "K/cumm",
-						"1000/μL", "10\\'3/ul"],
-		"Exclude" : []
-		},
-		
-	"10^4/ul":{
-		"Include" : [	"10\\^4/UL", "10\\^4 /uL", "10\\^4/ul", 
-						"10\\^4/UL", "10000/μL", "10000/uL", "10\\^4/uL",
-						"萬/uL", "10\\^4/uL", "萬/UL", "萬/ul", "\\*10\\^4/uL",
-						"\\* 10\\^4 / ul", "104/uL", "104/cu.mm", "10\\︿4/UL"],
-		"Exclude" : [	"10\\^6/UL", "百萬/uL"]
-	},
-	
-	"10^6/ul":{
-		"Include" : [	"10\\^6/uL","million/uL", "10\\^6/ul",
-						"10\\^6/μL", "10︿6/ul", "10 \\^6/uL",
-						"10\\^6/UL", "10 6/ul", "10 6/μL",
-						"10\\^6/μl", "10\\*6/uL", "MILON/uL",
-						"×10\\^6/μl", "10E6/uL", "1000000/UL",
-						"×1000000／μl", "x10.e6uL", "x106/uL",
-						"10\\*6/uL", "\\*10\\^6/μl", "10E6/UL",
-						"10\\*6/UL", "1000000/μL", "106/uL",
-						"10e6/uL", "10\\*6/ul", "百萬/uL", "x106/ul",
-						"/10\\^6μl", "mil/ul", "1000000/uL", "Mill/ul",
-						"x10e6/ul", "10\\^6ul", "x10\\^6 /uL", "X10\\^6 /UL",
-						"x10\\*6uL", "10\\*6/ul", "10\\^6 /ul", "1000000/ul",
-						"10x6/ul", "10\\^6 /ul", "10e6/uL", "\\*10\\(6\\)/ul",
-						"10\\^6 /uL", "10\\^6UL", "Million/uL", "10\\^6 /uL",
-						"10\\(6\\)uL", "10×6/uL", "10\\*6/μL", "㏕/ul",
-						"10m6/ul", "\\*106/ul", "10e6/ul", "Mil/ul", "㏕/uL",
-						"106/uL", "106/ul", "10E6/ul", "10x6/uL", "10^6 / μl",
-						"10︿6/uL", "x10\\’6/ul", "10\\'6/ul", "10 6/uL",
-						"million/ul", "106/μl", "\\*10 6/uL", "million/μL"],
-		"Exclude" : [	"10\\^4/UL"]
-	},
-	
-	"m/ul":{
-		"Include" : [	"M/μL", "M/uL", "M/UL", "M/ul"],
-		"Exclude" : []
-	},
-	
-	"g/ul":{
-		"Include" : [	"g/ul"],
-		"Exclude" : []
-	},
-	
-	"mg/ml": {
-		"Include" : [	"mg/ml", "mg/mL"],
-		"Exclude" : []
-	},
-	
-	"ng/ml": {
-		"Include" : [	"ng/mL", "ng/ml", "NG/ML", "ng/ml(feu)",
-						"ng／mL"],
-		"Exclude" : []
-	},
-	
-	"ug/ml": {
-		"Include" : [	"ug/ml", "ug/mL", "μg/mL",
-						"μg/ml", "ug /ml", "UG/ML",
-						"ug FEU/mL"],
-		"Exclude" : [	"mg/l", "mg/L"]
-	},
-	
-	"1000/ml":{
-		"Include" : [	"1000/ml", "10\\*3/mL", "10\\^3/ml"],
-		"Exclude" : []
-	},
-	
-	"10^6/ml":{
-		"Include" : [	"10\\^6/ml", "百萬/ml"],
-		"Exclude" : []
-	},
-	
-	
-	"pg/ml":{
-		"Include" : [	"Pg/mL", "pg/mL", "pg/ml", "PG/ML"],
-		"Exclude" : [	]
-	},
-	
-	"g/dl": {
-		"Include" : [	"^g/dL", "^g/dl", "^G/DL", "^Ｇ/DL", "^g\\／dL",
-						"^g\\／dl", "^G/dl", "^g /dL", "gHb/dL",
-						"公克/dL", "G/dL", "\\(g/dl\\)", "g/DL"],
-		"Exclude" : [	"mg/dL"]
-	},
-	
-	"mg/dl": {
-		"Include" : [	"mg/dL", "mg/dl", "MG/DL", "mg /dl",
-						"mg／dL"],
-		"Exclude" : []
-	},
-	
-	"ng/dl": {
-		"Include" : [	"NG/DL", "ng/dL"],
-		"Exclude" : []
-	},
-	
-	"ug/dl": {
-		"Include" : [	"ug/dL"],
-		"Exclude" : []
-	},
-	
-	"gm/dl":{
-		"Include" : [	"gm/dL", "gm/dl", "gm /dl", "Gm/dl",
-						"GM/DL"],
-		"Exclude" : []
-	},
-	
-	"gl/dl":{
-		"Include" : [	"gl/dl"],
-		"Exclude" : []
-	},
-	
-	"ml/dl":{
-		"Include" : [	"ml/dl"],
-		"Exclude" : []
-	},
-	
-	"1000/dl":{
-		"Include" : [	"千/dL", "千/dl"],
-		"Exclude" : []
-	},
-	
-	"10000/dl":{
-		"Include" : [	"萬/dl"],
-		"Exclude" : []
-	},
-	
-	
-	"10^6/dl":{
-		"Include" : [	"10\\^6/dl"],
-		"Exclude" : []
-	},
-	
-	"g/l": {
-		"Include" : [	"g/L", "g/l"],
-		"Exclude" : []
-	},
-	
-	"mg/l": {
-		"Include" : [	"mg/LFEU", "mg/L FEU", "mg/L(FEU)", "mg/L",
-						"mg/l FEU", "MG/L FEU", "MG/L", "mg/l",
-						"mg／L"],
-		"Exclude" : [	"μg/mL"]
-	},
-	
-	
-	"ng/l": {
-		"Include" : [	"ng/l", "ng/L"],
-		"Exclude" : []
-	},
-	
-	"ug/l": {
-		"Include" : [	"^ug/L", "^μg/L"],
-		"Exclude" : []
-	},
-	
-	"u/l": {
-		"Include" : [	"U/L", "U/l"],
-		"Exclude" : []
-	},
-	
-	"mmol/l" :{
-		"Include" : [	"mmol/L", "mmol/l"],
-		"Exclude" : []
-	},
-	
-	"cmm": {
-		"Include" : [	"^cmm", "/cmm", "^Cmm"],
-		"Exclude" : []
-	},
-	
-	"10^3/cmm": {
-		"Include" : [	"10\\^3/CMM", "1000/Cmm"],
-		"Exclude" : []
-	},
-	
-	"10^4/cmm": {
-		"Include" : [	"萬/Cmm", "萬/CMM"],
-		"Exclude" : []
-	},
-	
-	"10^6/cmm": {
-		"Include" : [	"10\\^6/CMM"],
-		"Exclude" : []
-	},
-	
-	"cumm": {
-		"Include" : [	"^cumm", "^/cu.mm", "^/cumm", "^/CUMM", "^Cumm",
-						"^/Cumm", "^cu.mm"],
-		"Exclude" : []
-	},
-	
-	"100/cumm":{
-		"Include" : [	"10\\^2/cu.mm"],
-		"Exclude" : []
-	},
-	
-	"1000/cumm":{
-		"Include" : [	"x1000/Cumm", "x10\\^3/cumm", "千/cumm",
-						"\\*10\\^3/cumm", "10\\^3/cu.mm", "X10\\^3/cumm",
-						"仟/cumm", "x10\\*3/cumm", "千/Cumm", "1000/cumm",
-						"k/cumm", "10\\^3/cumm", "103/cumm", "10x3/cumm"],
-		"Exclude" : []
-	},
-	
-	"10000/cumm":{
-		"Include" : [	"萬/cumm", "10\\^4/cumm", "萬/Cumm", "10\\^4/cumm"],
-		"Exclude" : [	"百萬"]
-	},
-	
-	"10^6/cumm":{
-		"Include" : [	"10\\^6/cumn", "百萬/cum", "10\\^6/cu.mm",
-						"MIL/cumm", "mil/cumm", "million/cumm",
-						"10x6/cum", "\\*10\\^6/cumm", "10\\^6/cumm",
-						"㏕/cumm"],
-		"Exclude" : []
-	},
-	
-	"m/cumm":{
-		"Include" : [	"m/Cumm", "M/cumm"],
-		"Exclude" : []
-	},
-	
-	"g/gl":{
-		"Include" : [	"g/gl"],
-		"Exclude" : []
-	},
-	
-	"mm":{
-		"Include" : [	"^/mm"],
-		"Exclude" : [	"^/mm\\^3"]
-	},
-	
-	"mm^3":{
-		"Include" : [	"^/mm\\^3"],
-		"Exclude" : []
-	},
-	
-	"10^3/mm^3":{
-		"Include" : [	"10\\^3/mm\\^3", "10\\^3/mm3"],
-		"Exclude" : []
-	},
-	
-	"pg":{
-		"Include" : [	"PG", "^pg", "^/pg", "^Pg", "\\(pg\\)"],
-		"Exclude" : [	"Pg/mL", "pg/mL", "pg/ml", "PG/ML"]
-	},
-	
-	
-	"fl":{
-		"Include" : [	"^/fl", "^FL", "^fl", "^fL", "^/fL",
-						"^\\(fl\\)", "^Fl"],
-						
-		"Exclude" : []
-	},
-	
-	"mg%": {
-		"Include" : [	"mg%"],
-		"Exclude" : []
-	},
-	
-	"%":{
-		"Include" : [	"^%$", "^％", "^﹪", "^\\(%\\)"],
-		"Exclude" : []
-	},
-	
-	"sec":{
-		"Include" : [	"sec", "SEC", "Sec", "秒", "s"],
-		"Exclude" : []
-	},
-	
-	
-	"1000/u":{
-		"Include" : [	"\\*10\\^3\\／u", "x10\\^3/u$"],
-		"Exclude" : []
-	}
-
+  
+  "pg": {
+    "Include": [
+      "pg",
+      "^pg",
+      "^/pg",
+      "\\(pg\\)"
+    ],
+    "Exclude": [
+		"pg/ml",
+		"pg/dl",
+		"pg/cell"
+	]
+  },
+  "fl": {
+    "Include": [
+      "^/fl",
+      "^fl",
+      "^\\(fl\\)"
+    ],
+    "Exclude": []
+  },
+  "mg%": {
+    "Include": "mg%",
+    "Exclude": []
+  },
+  "%": {
+    "Include": [
+      "^%$",
+      "^％",
+      "^﹪",
+      "^\\(%\\)"
+    ],
+    "Exclude": []
+  },
+  "sec": {
+    "Include": [
+      "sec",
+      "秒",
+      "^s"
+    ],
+    "Exclude": []
+  },
+  "1000/u": {
+    "Include": [
+      "\\*10\\^3\\／u",
+      "x10\\^3/u$"
+    ],
+    "Exclude": []
+  },
+  
+  "10^6/u": {
+    "Include": [
+      "10\\^6/u$",
+	  "10\\^6／u$",
+	  "1000000/u$"
+    ],
+    "Exclude": []
+  }
 }

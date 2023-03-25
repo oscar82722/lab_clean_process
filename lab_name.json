@@ -1,4 +1,16 @@
 {
+	"09004C":{
+		"tg":{
+		"Include": [
+        "tg",
+		"三酸甘油脂",
+		"Triglyceride"
+		],
+      "Exclude": [
+      ]
+		}
+	},
+	
   "08002C": {
     "WBC": {
       "Include": [
